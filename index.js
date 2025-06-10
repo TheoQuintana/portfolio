@@ -98,3 +98,7 @@ function setTheme(isDark) {
 window.addEventListener("scroll", () => {
 	arianeScroll();
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+	arianeScroll();
+});

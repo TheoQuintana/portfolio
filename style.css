@@ -609,21 +609,6 @@ section:not(.contact) .button {
   margin-block: 3rem 1.5rem;
 }
 
-.veilles {
-  margin: 0 auto;
-}
-.veilles h3 {
-  margin-top: 4rem;
-}
-
-.veille {
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 10px;
-  background-color: var(--text-10);
-  color: var(--text);
-}
-
 .contact {
   padding-block: 5em;
   background-color: var(--text-10);

@@ -221,7 +221,8 @@ header {
 		font-size: 70pt;
 		margin-top: 0;
 		--shadowWidth: 5px;
-		text-shadow: var(--shadowWidth) 0px 0px var(--primary),
+		text-shadow:
+			var(--shadowWidth) 0px 0px var(--primary),
 			calc(var(--shadowWidth) * -1) 0px 0px var(--primary),
 			0px var(--shadowWidth) 0px var(--primary),
 			0px calc(var(--shadowWidth) * -1) 0px var(--primary);
@@ -334,15 +335,18 @@ header {
 	&.main {
 		background-color: var(--accent);
 		color: var(--black);
-		box-shadow: inset -2px -2px 5px var(--black-10),
+		box-shadow:
+			inset -2px -2px 5px var(--black-10),
 			inset 5px 5px 5px var(--white-10);
 		border: none;
 
 		&:hover,
 		&:focus-within {
 			transform: scale(1.05);
-			box-shadow: inset -2px -2px 2px var(--black-10),
-				inset 2px 2px 5px var(--white-10), 1px 1px 5px var(--black-10);
+			box-shadow:
+				inset -2px -2px 2px var(--black-10),
+				inset 2px 2px 5px var(--white-10),
+				1px 1px 5px var(--black-10);
 			img {
 				filter: contrast(100%);
 			}
@@ -705,23 +709,6 @@ section:not(.contact) {
 	h3 {
 		margin-block: 3rem 1.5rem;
 	}
-}
-
-.veilles {
-	margin: 0 auto;
-
-	h3 {
-		margin-top: 4rem;
-	}
-}
-.veille {
-	padding: 1rem;
-
-	margin: 1rem 0;
-	border-radius: 10px;
-
-	background-color: var(--text-10);
-	color: var(--text);
 }
 
 .contact {

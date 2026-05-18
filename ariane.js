@@ -7,7 +7,6 @@ const anchorsNames = [
 	"parcours",
 	"projets",
 	"compétences",
-	"veilles",
 	"contact",
 ];
 const pathEl = document.getElementById("path");
@@ -22,7 +21,7 @@ function arianeScroll() {
 	UpdateAriane(
 		topEl.attributes.getNamedItem("data-sec") != null
 			? topEl.attributes.getNamedItem("data-sec").value
-			: anchorsNames[0]
+			: anchorsNames[0],
 	);
 }
 
@@ -49,7 +48,7 @@ function CreateArianeList() {
 				" at posY : " +
 				(element.getBoundingClientRect().top - bodyRect.top) +
 				" - " +
-				(element.getBoundingClientRect().bottom - bodyRect.top)
+				(element.getBoundingClientRect().bottom - bodyRect.top),
 		);
 	});
 }
@@ -73,7 +72,7 @@ function UpdateArianeList() {
 					"\nElement top: " +
 					(elemRect.top - bodyRect.top) +
 					"\n-> " +
-					element.attributes.getNamedItem("data-sec").value
+					element.attributes.getNamedItem("data-sec").value,
 			);
 	});
 }
